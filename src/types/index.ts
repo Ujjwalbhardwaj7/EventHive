@@ -1,0 +1,2 @@
+export type Event = { id: string; title: string; description: string; category: string; date: string; time: string; venue: string; featured: boolean; registration_open: boolean; capacity?: number | null; created_at?: string }
+export type Registration = { id: string; event_id: string; name: string; email: string; college_email: string; college: string; year: string; phone: string; created_at: string; events?: Pick<Event, 'title'> | null }
